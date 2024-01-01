@@ -23,7 +23,6 @@ header{
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    width: 788.778px;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -98,4 +97,47 @@ main{
 }
 .game3{
     background-image: url(game3.png);
+}
+
+@media (max-width: 426px){  
+    header{
+        height: 735px;
+    }  
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .heading{
+        font-size: 32px;
+        padding-top: 238px;
+        justify-content: center;
+        text-align: center;
+    }
+    .owerview{
+        text-align: center;
+        width: 343px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .owerview-link{
+        font-size: 14px;
+        line-height: 22px;        
+    }
+    .go{
+        margin-left: 54px;
+        margin-top: 32px;
+    }
+    .game{
+        grid-column: span 12;
+    }
+}
+
+@media (max-width: 360px){
+    .owerview{
+        width: auto;
+    }
+    
+    .go{
+        margin-left: 30px;
+    }
 }
